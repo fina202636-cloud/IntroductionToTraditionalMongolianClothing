@@ -11,7 +11,6 @@ body {
 
 .navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background: #8B0000;
     padding: 20px 40px;
@@ -20,6 +19,12 @@ body {
 .navbar h2 {
     color: white;
 }
+
+
+/* <ul>
+    <li><a href="types.html">種類</a></li>
+    <li><a href="contact.html">お問い合わせ</a></li>
+</ul> */
 
 .navbar ul {
     display: flex;
@@ -65,11 +70,16 @@ body {
     padding: 10px 20px;
     border-radius: 8px;
     transition: 0.3s;
+    margin-left: 50px;
 }
 
 .menu-btn:hover{
     background: gold;
     color: black;
+}
+
+.navbar > a:last-child {
+    margin-left: auto;
 }
 
 .gallery {
