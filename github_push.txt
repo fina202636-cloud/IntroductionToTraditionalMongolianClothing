@@ -1,0 +1,13 @@
+Эхний удаа
+
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/fina202636-cloud/IntroductionToTraditionalMongolianClothing.git
+git push -u origin main
+
+Дараа дараагын удаа
+git add .
+git commit -m "Script тайлбар нэмсэн"
+git push -u origin main

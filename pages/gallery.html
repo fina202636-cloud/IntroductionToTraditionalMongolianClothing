@@ -62,35 +62,46 @@
         </div>
     </section>
 
+    // Зураг дээр дарахад зургийг хар дэвсгэр дээр томоор харуулж, дахин дарахад хаана.
     <script>
+        // Бүх зургийг сонгож авах
         const images = document.querySelectorAll(".gallery-img");
 
+        // Зураг бүр дээр дарах үйлдэл нэмэх
         images.forEach(image => {
 
             image.addEventListener("click", function () {
 
+                // Томоор харуулах шинэ хэсэг үүсгэх
                 const overlay = document.createElement("div");
 
-                overlay.innerHTML = `
+                // Дарагдсан зургийг харуулах
+                    overlay.innerHTML = `
                     <img src="${this.src}">
                 `;
 
+                // Арын хэсгийг дэлгэц дүүрэн болгох
                 overlay.style.position = "fixed";
                 overlay.style.top = "0";
                 overlay.style.left = "0";
                 overlay.style.width = "100%";
                 overlay.style.height = "100%";
                 overlay.style.background = "rgba(0,0,0,0.8)";
+
+                // Зургийг голд байрлуулах
                 overlay.style.display = "flex";
                 overlay.style.justifyContent = "center";
                 overlay.style.alignItems = "center";
                 overlay.style.zIndex = "999";
 
+                // Том зургийн хэмжээг тохируулах
                 overlay.querySelector("img").style.maxWidth = "80%";
                 overlay.querySelector("img").style.maxHeight = "80%";
 
+                // Хуудсанд шинэ хэсгийг нэмэх
                 document.body.appendChild(overlay);
 
+                // Арын хэсэг дээр дарахад хаах
                 overlay.addEventListener("click", function () {
                     overlay.remove();
                 });
@@ -99,16 +110,24 @@
 
         });
     </script>
+
+    // Gallery-ийн зургуудыг дарааллаар нь аажмаар гаргаж харуулна.
     <script>
+        // Gallery доторх бүх зурагны хэсгийг авах
         const figures = document.querySelectorAll(".gallery figure");
 
+        // Зургуудыг дарааллаар нь гаргах
         figures.forEach((figure, index) => {
+
+            // Эхлээд харагдахгүй болгох
             figure.style.opacity = "0";
 
+            // Аажмаар харагдуулах эффект
             setTimeout(() => {
                 figure.style.transition = "0.5s";
                 figure.style.opacity = "1";
             }, index * 200);
+
         });
     </script>
 </body>

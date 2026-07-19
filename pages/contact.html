@@ -42,12 +42,18 @@
                 </button>
             </form>
 
+            // Хэрэглэгч форм илгээсний дараа баярлалаа гэсэн мессеж харуулж, нүүр хуудас руу буцах товч ажиллуулна.
             <script>
+                // Contact формыг олж авах
                 const form = document.getElementById("contactForm");
 
+                // Form илгээх үед ажиллах үйлдэл тохируулах
                 form.addEventListener("submit", function (e) {
-                    e.preventDefault(); // Хуудас шилжилтийг зогсоох
 
+                    // Хуудсыг дахин ачаалах болон шилжих үйлдлийг зогсоох
+                    e.preventDefault(); 
+
+                    // Илгээсний дараа харагдах хэсгийг өөрчлөх
                     document.querySelector(".contact-box").innerHTML = `
                         <h1>ありがとうございます！</h1>
                         <p class="intro">
@@ -58,7 +64,10 @@
                         <button id="homeBtn">ホームへ戻る</button>
                     `;
 
+                    // Нүүр хуудас руу буцах товч дээр дарахад ажиллах үйлдэл
                     document.getElementById("homeBtn").addEventListener("click", function () {
+
+                        // Home хуудас руу шилжих
                         location.href = "../home.html";
                     });
                 });
