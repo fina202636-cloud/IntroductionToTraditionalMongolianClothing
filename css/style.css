@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #8B0000;
+    padding: 20px 40px;
+}
+
+.navbar h2 {
+    color: white;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.here-btn {
+    padding: 10px 20px;
+    background: gold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.here-btn:hover {
+    background: orange;
+    color: white;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    color: #8B0000;
+}
+
+.menu-btn{
+    text-decoration: none;
+    color: white;
+    background: #b22222;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.menu-btn:hover{
+    background: gold;
+    color: black;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery figure {
+    width: 250px;
+    margin: 0;
+    text-align: center;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery figcaption {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* お問い合わせページ */
+
+.contact {
+    min-height: 100vh;
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.35),
+        rgba(0,0,0,0.35)
+    ),
+    url("../imgs/mongolia.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 60px 20px;
+}
+
+
+.contact-box {
+
+    width: 500px;
+
+    background: rgba(255,255,255,0.95);
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.25);
+}
+
+
+.contact-box h1 {
+
+    text-align:center;
+
+    color:#8b4513;
+
+    margin-bottom:20px;
+
+}
+
+.intro {
+
+    text-align:center;
+
+    color:#555;
+
+    line-height:1.8;
+
+    margin-bottom:30px;
+
+}
+
+.contact-box label {
+
+    display:block;
+
+    margin-top:20px;
+
+    margin-bottom:8px;
+
+    font-weight:bold;
+
+    color:#5c3a21;
+
+}
+
+.contact-box input,
+.contact-box textarea {
+
+    width:100%;
+
+    padding:12px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+    box-sizing:border-box;
+
+}
+
+.contact-box input:focus,
+.contact-box textarea:focus {
+
+    outline:none;
+
+    border-color:#b8860b;
+
+    box-shadow:0 0 5px rgba(184,134,11,0.5);
+
+}
+
+.contact-box button {
+
+    width:100%;
+
+    margin-top:30px;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#8b4513;
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+.contact-box button:hover {
+
+    background:#b8860b;
+
+    transform:translateY(-3px);
+
+}
