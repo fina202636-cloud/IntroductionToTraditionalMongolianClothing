@@ -9,5 +9,5 @@ git push -u origin main
 
 Дараа дараагын удаа
 git add .
-git commit -m "Коммент нэмсэн"
+git commit -m "Текст хадгалахыг устгав"
 git push -u origin main

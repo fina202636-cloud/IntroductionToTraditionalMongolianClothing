@@ -53,20 +53,6 @@
                     // Хуудсыг дахин ачаалах болон шилжих үйлдлийг зогсоох
                     e.preventDefault(); 
 
-                    // --- [Нэмэлт] Лавлагааны мэдээллийг авч, хадгалах үйл явц ---
-                    // *Маягтын элементүүдийн ID-г "name", "email", "message" гэж үзнэ.
-                    const contactData = {
-                        name: document.getElementById("name")?.value || "",
-                        email: document.getElementById("email")?.value || "",
-                        message: document.getElementById("message")?.value || "",
-                        submittedAt: new Date().toISOString() // Илгээх буюу хадгалах огноо 
-                    };
-
-                    let submissions = JSON.parse(localStorage.getItem("contact_submissions")) || [];
-                    submissions.push(contactData);
-                    localStorage.setItem("contact_submissions", JSON.stringify(submissions));
-                    // ----------------------------------------------------
-
                     // Илгээсний дараа харагдах хэсгийг өөрчлөх
                     document.querySelector(".contact-box").innerHTML = `
                         <h1>ありがとうございます！</h1>
