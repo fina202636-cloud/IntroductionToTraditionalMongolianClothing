@@ -9,5 +9,5 @@ git push -u origin main
 
 Дараа дараагын удаа
 git add .
-git commit -m "Script тайлбар нэмсэн"
+git commit -m "Коммент нэмсэн"
 git push -u origin main
